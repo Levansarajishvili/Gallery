@@ -1,44 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
-	<title>Image Gallery</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Gallery</title>
+  <style>
+    /* Gallery container */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    /* Image container */
+    .gallery-item {
+      margin: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    /* Image styling */
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
 </head>
 <body>
-<!-- Heading Name -->
-<div class="heading">
-	<h1>Image Gallery</h1>
-</div>
-	<!-- Image Gallery section all image in one div -->
-	<div class="gallery">
-<img src=
-"./Images/1.jpg" 
-alt="Image 2" class="gallery-img" onclick="showImage(src)">
-<img src="./Images/2.jpg"
-alt="Image 3" class="gallery-img" onclick="showImage(src)">
-<img src="./Images/3.jpg" alt="Image 4" class="gallery-img" onclick="showImage(src)">
-<img src="./Images/4.jpg" alt="Image 5" class="gallery-img" onclick="showImage(src)">
-<img src="./Images/5.jpg" 
-alt="Image 6" class="gallery-img" onclick="showImage(src)">
-<img src="./Images/6.jpg"
-alt="Image 7" class="gallery-img" onclick="showImage(src)">
-<img src="./Images/7.jpg" 
-alt="Image 8" class="gallery-img" onclick="showImage(src)">
-<img src="./Images/8.jpg"
-alt="Image 9" class="gallery-img" onclick="showImage(src)">
-<img src="./Images/9.jpg" 
-alt="Image 10" class="gallery-img" onclick="showImage(src)">
-<img src="./Images/10.jpg" 
-alt="Image 10" class="gallery-img" onclick="showImage(src)">		 
+
+<div class="gallery">
+  <!-- Image 1 -->
+  <div class="gallery-item">
+    <img src="https://via.placeholder.com/300" alt="Image 1">
+  </div>
+  
+  <!-- Image 2 -->
+  <div class="gallery-item">
+    <img src="https://via.placeholder.com/300" alt="Image 2">
+  </div>
+  
+  <!-- Image 3 -->
+  <div class="gallery-item">
+    <img src="https://via.placeholder.com/300" alt="Image 3">
+  </div>
+  
+  <!-- Image 4 -->
+  <div class="gallery-item">
+    <img src="https://via.placeholder.com/300" alt="Image 4">
+  </div>
 </div>
 
-<!-- Image containter where image will show in big size -->
-	<div class="image-popup-container" id="imagePopup">
-		<span class="close-button" onclick="closeImage()">×</span>
-		<img src="" alt="Popup Image" id="popupImage">
-	</div>
-	<script src="script.js"></script>
 </body>
 </html>
